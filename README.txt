@@ -1,0 +1,1 @@
+Add your own song as song.mp3 in this folder. Replace the 7 photos with your real images.
