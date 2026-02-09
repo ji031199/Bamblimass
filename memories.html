@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><title>Memories 💭</title><link rel="stylesheet" href="style.css"></head><body>
+<h1>Our Best Memories 💖</h1><p>Every moment with you becomes a memory I never want to forget.</p>
+<button onclick="showMsg()">Click Me 💌</button>
+<div id="msg" class="hidden">Life is more fun because you're in it 🤗</div><br><br>
+<button onclick="location.href='gallery.html'">See Photos 📸</button>
+<script>function showMsg(){document.getElementById("msg").style.display="block";}</script>
+
+<button onclick="toggleMusic()">🎵 Play / Pause Music</button>
+<audio id="bgMusic" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+<script>
+  const music = document.getElementById("bgMusic");
+  if (localStorage.getItem("musicPlaying") === "yes") {
+    music.play();
+  }
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+      localStorage.setItem("musicPlaying", "yes");
+    } else {
+      music.pause();
+      localStorage.setItem("musicPlaying", "no");
+    }
+  }
+</script>
+
+</body></html>
