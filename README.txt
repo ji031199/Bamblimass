@@ -1,1 +1,0 @@
-Upload your song as song.mp3 and replace the 7 photos with your real pictures.
